@@ -3997,3 +3997,26 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+/* Styl dla obrazów */
+.icons.major li img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    transform: rotate(45deg); /* Cofnięcie rotacji obrazka */
+    display: block;
+	padding: 10px;
+    margin-left: 10px;
+	margin-top: 5px;
+}
+
+/* Animacje przy najechaniu */
+.icons.major li:hover {
+    transform: rotate(30deg) scale(1.1);
+}
+.icons.major li p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: rgba(48, 45, 45, 0.5);
+    text-align: center;
+}

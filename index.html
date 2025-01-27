@@ -6,10 +6,11 @@
 -->
 <html>
 	<head>
-		<title>Spectral by HTML5 UP</title>
+		<title>FRMS</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="landing is-preload">
@@ -27,10 +28,7 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li>
+											<li><a href="generic.html">Documentation</a></li>
 										</ul>
 									</div>
 								</li>
@@ -56,15 +54,44 @@
 					<section id="one" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Arcu aliquet vel lobortis ata nisl<br />
-								eget augue amet aliquet nisl cep donec</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								<h2>Technologie użyte w projekcie</h2>
+								<p>
+									W projekcie wykorzystaliśmy podstawowe, ale sprawdzone technologie backendowe i frontendowe. 
+									Nasza grupa celowo skupiła się na stabilnych i dobrze znanych rozwiązaniach. 
+									Chcieliśmy udowodnić, że nawet przy użyciu tradycyjnych technologii można stworzyć w pełni funkcjonalną, wydajną i nowoczesną aplikację webową.
+								</p>
 							</header>
 							<ul class="icons major">
-								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
+								<li>
+									<span class="icon major style1">
+										<img src="images/Flask.png" alt="Flask" />
+									</span>
+									<p>Flask</p>
+								</li>
+								<li>
+									<span class="icon major style1">
+										<img src="images/Python.png" alt="Python" />
+									</span>
+									<p>Python</p>
+								</li>
+								<li>
+									<span class="icon major style1">
+										<img src="images/SQLite.png" alt="HTML5" />
+									</span>
+									<p>SQLite</p>
+								</li>
+								<li>
+									<span class="icon major style1">
+										<img src="images/HTML5.png" alt="HTML5" />
+									</span>
+									<p>HTML5</p>
+								</li>
+								<li>
+									<span class="icon major style1">
+										<img src="images/CSS3.png" alt="HTML5" />
+									</span>
+									<p>CSS3</p>
+								</li>
 							</ul>
 						</div>
 					</section>
@@ -72,59 +99,153 @@
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
-							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>Magna primis lobortis<br />
-								sed ullamcorper</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							<div class="image"><img src="images/pic01.jpg" alt="" /></div>
+							<div class="content">
+								<h1>First Reaction Medical System</h1>
+								<p>
+									Witaj w naszym systemie wspomagającym szybką reakcję medyczną. Aplikacja została zaprojektowana z myślą o prostocie i intuicyjności użytkowania, aby wspierać pracę personelu medycznego oraz zarządzanie danymi pacjentów.
+								</p>
+								<p>
+									Wybierz jedną z dostępnych opcji, aby rozpocząć korzystanie z aplikacji:
+								</p>
+								<ul>
+									<li><strong>Register:</strong> Rejestruj nowych pacjentów i wprowadzaj ich dane.</li>
+									<li><strong>Database:</strong> Zarządzaj bazą danych pacjentów oraz ich historią medyczną.</li>
+								</ul>
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>Tortor dolore feugiat<br />
-								elementum magna</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							<div class="image"><img src="images/pic02.jpg" alt="" onclick="playVideo1()" /></div>
+							<div class="content">
+								<h2>Formularz Obrażeń Pacjenta</h2>
+								<p>
+									W tej sekcji użytkownik ma dostęp do interaktywnego ludzika SVG z 13 kończynami z każdej strony (łącznie 26), które można zaznaczać, każda z opisem obrażeń. Formularz zawiera również pola do wprowadzenia danych pacjenta oraz możliwość dodania własnych opcji w sekcji "Other". Algorytm na podstawie wprowadzonych danych wylicza priorytet pomocy pacjentowi.
+								</p>
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>Augue eleifend aliquet<br />
-								sed condimentum</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							<div class="image"><img src="images/pic03.jpg" alt="" onclick="playVideo2()" /></div>
+							<div class="content">
+								<h2>Lista Pacjentów</h2>
+								<p>
+									Strona z dodanymi pacjentami, gdzie każdy pacjent jest oznaczony jednym z trzech kolorów, które wskazują stopień priorytetu:
+									<ul>
+										<li><strong>Czerwony:</strong> Wysoki priorytet</li>
+										<li><strong>Żółty:</strong> Średni priorytet</li>
+										<li><strong>Zielony:</strong> Niski priorytet</li>
+									</ul>
+									Każdy pacjent ma wyświetlany podgląd swoich danych razem z obrażeniami, a w nim dostępne są opcje edycji, usunięcia oraz eksportu danych. Nawigacja odbywa się za pomocą klawiszy w prawym i lewym rogu ekranu, umożliwiającymi przełączanie się między kartami.
+								</p>
 							</div>
 						</section>
 					</section>
+					
+					<!-- Modal do wyświetlania pierwszego filmiku -->
+					<div id="videoModal1" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background-color:white; padding:20px; z-index:1000;">
+						<video id="patientVideo1" width="600" controls preload="auto">
+							<source src="assets\css\videos\register.mp4" type="video/mp4">
+							Twoja przeglądarka nie wspiera odtwarzania filmików.
+						</video>
+						<!-- <button id="closeButton1" onclick="closeVideo1()">&#10005;</button> -->
+					</div>
 
+					<!-- Modal do wyświetlania drugiego filmiku -->
+					<div id="videoModal2" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background-color:white; padding:20px; z-index:1000;">
+						<video id="patientVideo2" width="600" controls preload="auto">
+							<source src="assets\css\videos\patients.mp4" type="video/mp4">
+							Twoja przeglądarka nie wspiera odtwarzania filmików.
+						</video>
+						<!-- <button id="closeButton2" onclick="closeVideo2()">&#10005;</button> -->
+					</div>
+
+					<div id="modalOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); z-index:999;" onclick="closeAllVideos()"></div>
+
+					<script>
+					function playVideo1() {
+						var video = document.getElementById('patientVideo1');
+						video.addEventListener('canplay', function() {
+							video.play().catch(error => {
+								console.error('Error attempting to play video:', error);
+							});
+						});
+						document.getElementById('videoModal1').style.display = 'block';
+						document.getElementById('modalOverlay').style.display = 'block';
+						video.load();
+					}
+
+					function closeVideo1() {
+						var video = document.getElementById('patientVideo1');
+						video.pause();
+						video.currentTime = 0;
+						document.getElementById('videoModal1').style.display = 'none';
+						document.getElementById('modalOverlay').style.display = 'none';
+					}
+
+					function playVideo2() {
+						var video = document.getElementById('patientVideo2');
+						video.addEventListener('canplay', function() {
+							video.play().catch(error => {
+								console.error('Error attempting to play video:', error);
+							});
+						});
+						document.getElementById('videoModal2').style.display = 'block';
+						document.getElementById('modalOverlay').style.display = 'block';
+						video.load();
+					}
+
+					function closeVideo2() {
+						var video = document.getElementById('patientVideo2');
+						video.pause();
+						video.currentTime = 0;
+						document.getElementById('videoModal2').style.display = 'none';
+						document.getElementById('modalOverlay').style.display = 'none';
+					}
+
+					function closeAllVideos() {
+						closeVideo1();
+						closeVideo2();
+					}
+					</script>
+
+					<style>
+					#closeButton1, #closeButton2 {
+						position: absolute;
+						top: 10px;
+						right: 10px;
+						background: none;
+						border: none;
+						font-size: 24px;
+						color: black;
+						cursor: pointer;
+						outline: none;
+					}
+					#closeButton1:hover, #closeButton2:hover {
+						color: red;
+					}
+					</style>
 				<!-- Three -->
 					<section id="three" class="wrapper style3 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Accumsan mus tortor nunc aliquet</h2>
+								<h2>Funkcjonalności</h2>
 								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
 								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
 							</header>
 							<ul class="features">
 								<li class="icon fa-paper-plane">
-									<h3>Arcu accumsan</h3>
+									<h3>Sortowanie pacjentów</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
 								<li class="icon solid fa-laptop">
-									<h3>Ac Augue Eget</h3>
+									<h3>Export danych pacjenta</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
 								<li class="icon solid fa-code">
-									<h3>Mus Scelerisque</h3>
+									<h3>Wizualizacja obrażeń</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
 								<li class="icon solid fa-headphones-alt">
-									<h3>Mauris Imperdiet</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-heart">
-									<h3>Aenean Primis</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-flag">
-									<h3>Tortor Ut</h3>
+									<h3>Zarządzanie pacjentami</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
 							</ul>
@@ -148,14 +269,10 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Jastrzębski Myśliński Opoń Pomorski</li>
 						</ul>
 					</footer>
 
@@ -171,4 +288,28 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+	<script>
+		function playVideo() {
+			document.getElementById('videoModal').style.display = 'block';
+			document.getElementById('modalOverlay').style.display = 'block';
+			var video = document.getElementById('patientVideo');
+			var playPromise = video.play();
+		
+			if (playPromise !== undefined) {
+				playPromise.then(_ => {
+					// Automatic playback started!
+				}).catch(error => {
+					console.error('Error attempting to play video:', error);
+				});
+			}
+		}
+		
+		function closeVideo() {
+			document.getElementById('videoModal').style.display = 'none';
+			document.getElementById('modalOverlay').style.display = 'none';
+			var video = document.getElementById('patientVideo');
+			video.pause();
+			video.currentTime = 0;
+		}
+	</script>
 </html>

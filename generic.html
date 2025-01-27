@@ -38,24 +38,89 @@
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<h2>Generic Page</h2>
-							<p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
+							<h2>Documentation Page</h2>
+							<p>Krótka i treściwa dokumentacja projektu wprowadzająca w temat.</p>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
-
-								<h3>Lorem ipsum dolor</h3>
-								<p>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
-
-								<p>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna, sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius.</p>
-
-								<hr />
-
-								<h4>Feugiat aliquam</h4>
-								<p>Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec varius ex in mauris ornare, eget euismod urna egestas. Etiam lacinia tempor ipsum, sodales porttitor justo. Aliquam dolor quam, semper in tortor eu, volutpat efficitur quam. Fusce nec fermentum nisl. Aenean erat diam, tempus aliquet erat.</p>
-
-								<p>Etiam iaculis nulla ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit, eget condimentum nunc blandit vel. In at pulvinar lectus. Morbi diam ante, vulputate et imperdiet eget, fermentum non dolor. Ut eleifend sagittis tincidunt. Sed viverra commodo mi, ac rhoncus justo. Duis neque ligula, elementum ut enim vel, posuere finibus justo. Vivamus facilisis maximus nibh quis pulvinar. Quisque hendrerit in ipsum id tellus facilisis fermentum. Proin mauris dui, at vestibulum sit amet, auctor bibendum neque.</p>
-
+								<h2>First Reaction Medical System (FRMS)</h2>
+								<h3>Wprowadzenie</h3>
+								<p>First Reaction Medical System (FRMS) to system zarządzania danymi pacjentów, który umożliwia rejestrację, edycję, usuwanie oraz wizualizację danych medycznych. System oferuje automatyczną ocenę priorytetów na podstawie opisu urazów, wieku oraz czasu od zdarzenia, a także możliwość ręcznego ustawienia priorytetu przez użytkownika. Dodatkowo, system generuje wizualizację urazów na podstawie danych SVG.</p>
+					
+								<h3>Cele i funkcjonalności projektu</h3>
+								<p>Głównym celem projektu było stworzenie systemu, który usprawnia zarządzanie danymi pacjentów w sytuacjach kryzysowych, takich jak wypadki masowe lub katastrofy. System jest zaprojektowany z myślą o szybkim i intuicyjnym wprowadzaniu danych, automatycznej ocenie priorytetów oraz wizualizacji urazów, co ma na celu poprawę jakości opieki medycznej.</p>
+					
+								<h3>Kluczowe funkcjonalności</h3>
+								<ul>
+									<li><strong>Rejestracja pacjentów:</strong>
+										<ul>
+											<li>Możliwość wprowadzenia danych osobowych (imię, nazwisko, wiek, płeć, grupa krwi).</li>
+											<li>Dodawanie informacji medycznych (alergie, choroby, przyjmowane leki).</li>
+											<li>Opisy urazów wraz z możliwością wizualizacji na modelu ciała.</li>
+										</ul>
+									</li>
+									<li><strong>Automatyczna ocena priorytetów:</strong>
+										<ul>
+											<li>Algorytm analizuje opis urazów, wiek pacjenta oraz czas od zdarzenia, aby przypisać priorytet (np. krytyczny, poważny, lekki).</li>
+											<li>Użytkownik może również ręcznie ustawić priorytet, jeśli automatyczna ocena nie jest wystarczająca.</li>
+										</ul>
+									</li>
+									<li><strong>Wizualizacja urazów:</strong>
+										<ul>
+											<li>System generuje wizualizację urazów na modelu ciała w formie SVG, co ułatwia diagnozę i planowanie leczenia.</li>
+										</ul>
+									</li>
+									<li><strong>Edycja i usuwanie danych:</strong>
+										<ul>
+											<li>Możliwość modyfikacji i usuwania danych pacjentów.</li>
+										</ul>
+									</li>
+									<li><strong>Generowanie raportów PDF:</strong>
+										<ul>
+											<li>Eksportowanie danych pacjenta do pliku PDF w celu dalszej analizy lub dokumentacji.</li>
+										</ul>
+									</li>
+								</ul>
+					
+								<h3>Architektura systemu</h3>
+								<h4>Backend</h4>
+								<ul>
+									<li>Flask: Framework do obsługi żądań HTTP i routingu.</li>
+									<li>SQLAlchemy: ORM do zarządzania bazą danych.</li>
+								</ul>
+								<h4>Frontend</h4>
+								<ul>
+									<li>HTML/CSS: Interfejs użytkownika.</li>
+									<li>JavaScript: Obsługa interakcji użytkownika (np. wybór części ciała, generowanie PDF).</li>
+									<li>SVG: Wizualizacja urazów na modelu ciała.</li>
+								</ul>
+								<h4>Baza danych</h4>
+								<ul>
+									<li>SQLite: Przechowywanie danych pacjentów.</li>
+									<li>Tabela Patient:
+										<ul>
+											<li>id: Unikalny identyfikator pacjenta.</li>
+											<li>name, surname, age, gender, blood_type: Dane osobowe.</li>
+											<li>allergies, diseases, on_medication: Informacje medyczne.</li>
+											<li>svg_content: Zawartość SVG do wizualizacji urazów.</li>
+											<li>descriptions: Opisy urazów.</li>
+											<li>priority: Priorytet pacjenta.</li>
+										</ul>
+									</li>
+								</ul>
+					
+								<h3>Podsumowanie realizacji założeń</h3>
+								<h4>Zrealizowane cele</h4>
+								<ul>
+									<li>Rejestracja i zarządzanie danymi pacjentów: System umożliwia łatwe wprowadzanie, edycję i usuwanie danych pacjentów.</li>
+									<li>Automatyczna ocena priorytetów: Algorytm działa poprawnie, przypisując priorytety na podstawie opisów urazów.</li>
+									<li>Ręczne ustawienie priorytetu: Użytkownik może samodzielnie określić priorytet, co zwiększa elastyczność systemu.</li>
+									<li>Wizualizacja urazów: System generuje wizualizację urazów na modelu ciała.</li>
+									<li>Generowanie raportów PDF: Funkcjonalność działa zgodnie z założeniami.</li>
+								</ul>
+					
+								<h3>Podsumowanie</h3>
+								<p>System FRMS to kompleksowe rozwiązanie do zarządzania danymi pacjentów w sytuacjach kryzysowych. Dzięki intuicyjnemu interfejsowi i zaawansowanym funkcjom, takim jak wizualizacja urazów i automatyczna ocena priorytetów, system znacząco usprawnia proces udzielania pomocy medycznej. Większość założeń projektu została zrealizowana.</p>
 							</div>
 						</section>
 					</article>
